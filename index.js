@@ -16,6 +16,12 @@ app.get('/tshirt', (req, res) => {
   })
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).send({
+    status: '200'
+  })
+});
+
 app.post('/tshirt/:id', (req, res) => {
 
   const {id} = req.params;

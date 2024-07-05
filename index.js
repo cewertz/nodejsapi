@@ -16,6 +16,13 @@ app.get('/tshirt', (req, res) => {
   })
 });
 
+app.get('/tshirt1', (req, res) => {
+  res.status(200).send({
+    tshirt: 'blue',
+    size: 'small'
+  })
+});
+
 app.get('/health', (req, res) => {
   res.status(200).send({
     status: '200'

@@ -23,6 +23,13 @@ app.get('/tshirt1', (req, res) => {
   })
 });
 
+app.get('/tshirt2', (req, res) => {
+  res.status(200).send({
+    tshirt: 'yellow',
+    size: 'medium'
+  })
+});
+
 app.get('/health', (req, res) => {
   res.status(200).send({
     status: '200'

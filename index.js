@@ -30,6 +30,13 @@ app.get('/tshirt2', (req, res) => {
   })
 });
 
+app.get('/tshirt3', (req, res) => {
+  res.status(200).send({
+    tshirt: 'black',
+    size: 'xxl'
+  })
+});
+
 app.get('/health', (req, res) => {
   res.status(200).send({
     status: '200'
